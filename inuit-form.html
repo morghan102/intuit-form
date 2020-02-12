@@ -7,42 +7,68 @@
     
     
     <header>
-        <div class="log-in">
-            <a>already have an account? log in. (LINK)</a>
+        <div class="log-in-box">
+            <p>Already have an account?</p>
+            <a href="nowhere" class="forget">I forgot my username or password</a>
+            <button>Log in</button class="log-in">
         </div>
     </header>
     
+
+
     <aside class="sticky">
         privacy settings sticky link
     </aside>
+
+
+
     <div class="content">
         <section class="intuit-title">
             <a>Intuit logo</a>
         </section>
         
+
         
         <section class="child-logos">
             <a>links to tt, qb, & mint w/ logos</a>
         </section>
         
+
         
-        <section class="row">
-            <div class="grid">
+        <!-- <section class="row"> -->
+            <div class="site-form">
+                <form action="/login" method="post">
+                    <!-- need to check on what those 2 shd be -->
                 title "create an acct"
                 subtitle "1 acct for everything...+links"
-                Email address submit w/ explan below
-                phone submit
-                pword submit
-                create acct button
-                "by clicking create..."
-                footer "invisible recaptcha..."
-            </div>
-        </section>
+                
+                <label>
+                    Email address
+                    <input type="text" name="user-email" required></label>
+                <!-- Email address submit w/ explan below -->
 
-        <section class="footing-info">
-            footer on bottom of privacy stuff
-        </section>
+                <label>
+                    Phone (recommended)
+                    <input type="tel" name="user-phone"></label>
+                <!-- phone submit w/ recommended-->
+                
+                <label>
+                    Password
+                    <input type="text" name="password" required></label>
+                <!-- pword submit -->
+
+                <button name="submit">Create Account</button>
+                <!-- create acct button ... needs lock icon-->
+                <p class="privacy-agreement">"by clicking create..."</p>
+                <p class="form-footer">footer "invisible recaptcha..."</p>
+                </form>
+            </div>
+        <!-- </section> -->
+
     </div>
+    <section class="footing-info">
+        footer on bottom of privacy stuff
+    </section>
 
 </body>
 

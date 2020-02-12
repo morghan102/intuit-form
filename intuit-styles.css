@@ -1,35 +1,113 @@
 html {
     display: flex;
+    background: rgba(241, 240, 240, 0.904);
+    flex-direction: column;
+    
 }
 
-.log-in {
-    background: lightcoral
+
+/* inside header */
+/* needs better name. this one is confusing */
+header {
+    background: lightcoral;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-bottom: 7em;
+}
+.log-in-box {
+    display: flex;
+    flex-direction: row;
+    border: 1px dashed yellow;
+}
+.log-in-box p, .forget, .log-in-box button {
+    justify-content: flex-end;
+    border: 1px dashed red;
+    margin: 0;
+
+}
+/* .log-in-box p { NEED TO STACK THESE 2. ALIGN SELF OR ITEMS? IDK. THIS DOESN'T WORK
+    align-items: flex-start;
+}
+.forget {
+    align-items: flex-end;
+} */
+
+
+.body {
+    display: flex;
+    justify-content: center;
 }
 
+
+
+/* will be a navbar. I know how to do this. Q is where to put it on the page */
 .sticky {
-background: rgba(199, 88, 88, 0.815);
+background: rgba(88, 199, 193, 0.815);
 }
+
+
+
 
 .content {
+    display: flex;
+    flex-direction: column;
     border: 1px solid black;
-}
 
+}
 .intuit-title {
     background: darkorange;
+    justify-content: center;
+    /* this is not miving, but might once I add the logo poperly */
 }
+
+
+
+
+
 
 .child-logos {
     background: lightsalmon;
+    display: flex;
+    flex-direction: row;
+
+    /* these 2 props are super confusing to me. I need? */
+    flex-basis: 33%;
+    flex-grow: 1;
+    /* holding these 2 together */
+
+    justify-content: center;
+
 }
 
-.row {
-    border: .5px dashed black
-}
 
-.grid {
+
+
+/* idk why bt items won't align in the center */
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: .5px dashed black;
     background: rgb(242, 243, 165);
+
 }
+/* theseeee  a2 rp elements. if they stay that way might be easier to just wrap all p's */
+.privacy-agreement {
+    flex-wrap: wrap;
+}
+.form-footer {
+    flex-wrap: wrap;
+}
+form p {
+    justify-content: center;
+
+}
+
 
 .footing-info {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     background: lightgray;
 }
