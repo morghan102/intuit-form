@@ -1,6 +1,7 @@
 html {
     display: flex;
     background: rgba(241, 240, 240, 0.904);
+    /* need to mess w the color */
     flex-direction: column;
     
 }
@@ -26,7 +27,7 @@ header {
     margin: 0;
 
 }
-/* .log-in-box p { NEED TO STACK THESE 2. ALIGN SELF OR ITEMS? IDK. THIS DOESN'T WORK
+/* .log-in-box p { NEED TO STACK THESE 2. ALIGN SELF OR ITEMS or content? IDK. THIS DOESN'T WORK
     align-items: flex-start;
 }
 .forget {
@@ -58,7 +59,7 @@ background: rgba(88, 199, 193, 0.815);
 .intuit-title {
     background: darkorange;
     justify-content: center;
-    /* this is not miving, but might once I add the logo poperly */
+    /* this is not miving */
 }
 
 
