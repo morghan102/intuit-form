@@ -14,7 +14,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    padding-bottom: 7em;
+    padding-bottom: 3em;
 }
 .log-in-box {
     display: flex;
@@ -53,9 +53,16 @@ background: rgba(88, 199, 193, 0.815);
 .content {
     display: flex;
     flex-direction: column;
-    border: 1px solid black;
+    /* border: 1px solid black;   */
+    justify-content: center;
 
 }
+
+.content a {
+    display: flex;
+    justify-content: center;
+}
+
 .intuit-title {
     background: darkorange;
     justify-content: center;
@@ -78,9 +85,51 @@ background: rgba(88, 199, 193, 0.815);
     /* holding these 2 together */
 
     justify-content: center;
+    cursor: pointer;
+    padding-bottom: 4px;
 
 }
+.intuit-title {
+    width: 7.5em;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 
+}
+.child-logos .tbt-in-letter {
+    width: 4.5em;
+}
+.child-logos .qb-in-letter {
+    width: 5.55em;
+}
+.child-logos .m-in-letter {
+    width: 2.64em;
+}
+.child-logos .tbt-logo {
+    width: 1.75em;
+}
+.child-logos .qb-logo {
+    width: 1.75em;
+}
+.child-logos .m-logo {
+    width: 1.9em;
+}
+
+
+.site-form {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5em;
+}
+.site-form h3 {
+    color: #4c4c4c;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: AvenirNext,Avenir,Helvetica Neue,Helvetica,Arial,sans-serif;
+    line-height: 1.1;
+    display: flex;
+    justify-content: center;
+}
 
 
 
@@ -89,9 +138,16 @@ form {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: .5px dashed black;
     background: rgb(242, 243, 165);
-
+    border: 1px solid #c7c7c7;
+    border-radius: 2px;
+    margin: 0 205px;
+    padding: 30px 30px;
+    /* box-sizing: border-box; */
+    width: 318px;
+    height: 590px;
+    /* align-items: flex-start; */
+    align-content: flex-start;
 }
 /* theseeee  a2 rp elements. if they stay that way might be easier to just wrap all p's */
 .privacy-agreement {
@@ -100,10 +156,39 @@ form {
 .form-footer {
     flex-wrap: wrap;
 }
-form p {
+form p, form label {
+    display: flex;
     justify-content: center;
-
+    color: #4c4c4c;
+    font-weight: 300;
+    line-height: 1.2;
+    font-size: 14px;
 }
+form label {
+    line-height: 25px;
+    font-weight: 400;
+    color: #404040;
+    padding-bottom: 6px;
+    align-items: flex-start;
+    align-content: flex-start;
+    align-self: flex-start;
+}
+.site-form label p{
+    /* margin-bottom: 10%; HOW DO I CHANGE THE LABEL TO BR ABOVE THE BOX???? */
+}
+.site-form button {
+    background: #0077c5;
+    border: #0077c5;
+    width: 100%;
+    height: 44px;
+    font-weight: 400;
+    color: #fff;
+    padding: 6px 12px;
+    line-height: 1.428571429;
+    cursor: pointer;
+}
+
+
 
 
 .footing-info {
