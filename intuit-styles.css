@@ -1,7 +1,6 @@
 html {
     display: flex;
-    background: rgba(241, 240, 240, 0.904);
-    /* need to mess w the color */
+    background: #eceef1;    /* need to mess w the color */
     flex-direction: column;
     
 }
@@ -10,26 +9,36 @@ html {
 /* inside header */
 /* needs better name. this one is confusing */
 header {
-    background: lightcoral;
+    /* background: lightcoral; */
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    padding-bottom: 3em;
+    /* padding-bottom: 3em; */
 }
 .sign-in-box {
     display: flex;
     flex-direction: row;
-    border: 1px dashed yellow;
-    
+    padding: 10px 30px;
+    height: 60px;
+    background: #eceef1;
 }
-.sign-in-box p, .forget, .sign-in {
-    justify-content: flex-end;
-    border: 1px dashed red;
+.sign-in-column {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    text-align: right;
+}
+.sign-in-box div, .forget, .sign-in {
     margin: 0;
     font-family: AvenirNext,Avenir,Helvetica Neue,Helvetica,Arial,sans-serif;
     font-size: 12px;
+    
 }
-.sign-in {
+.sign-in-column div {
+    color: #505050;
+}
+.sign-in-btn {
+    margin-left: 10px;
     color: white;
     height: 34px;
     cursor: pointer;
@@ -46,6 +55,18 @@ header {
     font-weight: 400;
     /* box-shadow: 0 1px 1px 0 rgba(0,0,0,.75); */
 }
+
+
+/* this isnt working at all... WHY */
+.white-lock-img {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAwCAMAAAClrpMkAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAC6UExURUdwTP///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////3HoUvYAAAA9dFJOUwCrcV0ZYP6AMaL2lhCgWMgEKPEtUX9BqCfRDVU2y9X5OsDkAQbuFePEJC7TD7Q4E4QHfDD6DLJCell9Q8cCdpKaAAABLUlEQVQ4y92V13KDMBBFsWmxKe69995Lqv7/t3KFNQnIwsvkyZP7hI6ORmIXDZr2t1x85/p1dfzLQ2vnZNktWWcXr7Um7DeTVpyWtlg4VlqtmcHkRl8aS30TLDFVWokfrbsVo22XH7Kk8AaYmLs/Q3eO8eBeqwLPpiEwnYFU77wUaDlCyiApWcsXGVuNImi0YqyYl7w+FtsSs8H6EnsHe5XYJ5gv1xisILECmFzrCpghMQOsojiLyrP/nXfYZ5AGb2YmGt7yBn/YH+DpjI4udqRiP5HXy3m5Hu116mD1DuUN10FR10PCM8OX/oG3EN6C8JrCaxJeW3htwvOE5xGedXsR0yLrXAOrJekbWKL+jrVxIu/N/Xjm7y/OOybwjvBOZ1I7n4Jr/0LFSP4f/QY7TeMSyZCaMgAAAABJRU5ErkJggg==);
+    height: 1em;
+    width: .8em;
+    margin-top: 2px;
+    margin-right: 4px;
+    
+}
+
 /* .log-in-box p { NEED TO STACK THESE 2. ALIGN SELF OR ITEMS or content? IDK. THIS DOESN'T WORK
     align-items: flex-start;
 }
@@ -120,7 +141,7 @@ background: rgba(88, 199, 193, 0.815);
     justify-content: center;
     cursor: pointer;
 }
-.child-logos .tbt-in-letter {
+/* .child-logos .tbt-in-letter {
     width: 4.5em;
     height: 1em;
     align-self: center;
@@ -145,8 +166,16 @@ background: rgba(88, 199, 193, 0.815);
     width: 1.9em;
     margin-right: .25em;
     margin-left: .25em;
+} */
+.child-logos .m-logo, .child-logos .qb-logo, .child-logos .tbt-logo {
+    margin-right: 4px;
+    width: 23px;
+    height: 23px;
 }
-
+.child-logos .m-in-letter {
+    width: 37px;
+    height: 20px;
+}
 
 .site-form {
     display: flex;
