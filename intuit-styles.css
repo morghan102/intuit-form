@@ -16,16 +16,35 @@ header {
     justify-content: flex-end;
     padding-bottom: 3em;
 }
-.log-in-box {
+.sign-in-box {
     display: flex;
     flex-direction: row;
     border: 1px dashed yellow;
+    
 }
-.log-in-box p, .forget, .log-in-box button {
+.sign-in-box p, .forget, .sign-in {
     justify-content: flex-end;
     border: 1px dashed red;
     margin: 0;
-
+    font-family: AvenirNext,Avenir,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 12px;
+}
+.sign-in {
+    color: white;
+    height: 34px;
+    cursor: pointer;
+    font-size: 1.125em;
+    font-weight: normal;
+    padding: 0 20px;
+    line-height: normal;
+    background: #0077c5;
+    border: #0077c5;
+    font: 400 13.3333px Arial;
+    text-shadow: none;
+    border-radius: 4px;
+    border: 1px solid #4c4c4c;
+    font-weight: 400;
+    /* box-shadow: 0 1px 1px 0 rgba(0,0,0,.75); */
 }
 /* .log-in-box p { NEED TO STACK THESE 2. ALIGN SELF OR ITEMS or content? IDK. THIS DOESN'T WORK
     align-items: flex-start;
@@ -78,6 +97,7 @@ background: rgba(88, 199, 193, 0.815);
     background: lightsalmon;
     display: flex;
     flex-direction: row;
+    animation: slide-left 1.1s cubic-bezier(.7,0,0,1) forwards;
 
     /* these 2 props are super confusing to me. I need? */
     flex-basis: 33%;
@@ -89,21 +109,31 @@ background: rgba(88, 199, 193, 0.815);
     padding-bottom: 4px;
 
 }
+.child-logos img {
+    margin-right: .25em;
+    margin-left: .25em;
+
+}
 .intuit-title {
     width: 7.5em;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-
 }
 .child-logos .tbt-in-letter {
     width: 4.5em;
+    height: 1em;
+    align-self: center;
 }
 .child-logos .qb-in-letter {
     width: 5.55em;
+    height: 1.25em;
+    align-self: center;
 }
 .child-logos .m-in-letter {
     width: 2.64em;
+    height: 1.25em;
+    align-self: center;
 }
 .child-logos .tbt-logo {
     width: 1.75em;
@@ -113,6 +143,8 @@ background: rgba(88, 199, 193, 0.815);
 }
 .child-logos .m-logo {
     width: 1.9em;
+    margin-right: .25em;
+    margin-left: .25em;
 }
 
 
@@ -129,8 +161,16 @@ background: rgba(88, 199, 193, 0.815);
     line-height: 1.1;
     display: flex;
     justify-content: center;
+    margin: .25em;
 }
-
+.site-form input {
+    border: 1px solid #c1c5c8;
+    width: 320px;
+    min-width: 160px;
+    padding-left: 8px;
+    padding-right: 6px;
+    height: 34px;
+}
 
 
 /* idk why bt items won't align in the center */
@@ -144,10 +184,11 @@ form {
     margin: 0 205px;
     padding: 30px 30px;
     /* box-sizing: border-box; */
-    width: 318px;
-    height: 590px;
+    /* width: 318px;
+    height: 590px; */
     /* align-items: flex-start; */
     align-content: flex-start;
+    font-family: AvenirNext,Avenir,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 /* theseeee  a2 rp elements. if they stay that way might be easier to just wrap all p's */
 .privacy-agreement {
@@ -172,9 +213,17 @@ form label {
     align-items: flex-start;
     align-content: flex-start;
     align-self: flex-start;
+    justify-content: flex-start;
+    font-size: 14px;
 }
-.site-form label p{
-    /* margin-bottom: 10%; HOW DO I CHANGE THE LABEL TO BR ABOVE THE BOX???? */
+/* .site-form label p{
+    position: relative;
+    top: -3.5em;
+    flex-wrap: none;
+    width: 9em;
+} */
+.site-form .inputs {
+    margin-top: 3em;
 }
 .site-form button {
     background: #0077c5;
@@ -182,10 +231,14 @@ form label {
     width: 100%;
     height: 44px;
     font-weight: 400;
+    font-size: 1.125em;
     color: #fff;
     padding: 6px 12px;
     line-height: 1.428571429;
     cursor: pointer;
+    border-radius: 4px;
+    border: #0077c5;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.75);
 }
 
 
