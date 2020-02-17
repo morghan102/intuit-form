@@ -217,31 +217,22 @@ background: rgba(88, 199, 193, 0.815);
     /* CANNOT GET THE PICS IN THE INPUTS TO APPEAR AHHHH */
 }
 
-/* idk why bt items won't align in the center */
 form {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: rgb(242, 243, 165);
+    background: white;
     border: 1px solid #c7c7c7;
     border-radius: 2px;
     margin: 0 205px;
     padding: 30px 30px;
-    width: 380px;
+    width: 318px;
     /* box-sizing: border-box; */
     /* width: 318px;
     height: 590px; */
     /* align-items: flex-start; */
     align-content: flex-start;
     font-family: AvenirNext,Avenir,Helvetica Neue,Helvetica,Arial,sans-serif;
-}
-/* theseeee  a2 rp elements. if they stay that way might be easier to just wrap all p's */
-.privacy-agreement {
-    flex-wrap: wrap;
-    /* display: flex; */
-}
-.recaptcha {
-    flex-wrap: wrap;
 }
 form p, form label {
     display: flex;
@@ -278,6 +269,7 @@ form label {
     margin-top: .5em;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 .site-form button {
     background: #0077c5;
@@ -293,6 +285,35 @@ form label {
     border-radius: 4px;
     border: #0077c5;
     box-shadow: 0 1px 1px 0 rgba(0,0,0,.75);
+}
+.submit-button-box {
+    padding-bottom: 30px;
+
+}
+/* theseeee  a2 rp elements. if they stay that way might be easier to just wrap all p's */
+.privacy-agreement-box {
+    font-size: 14px;
+
+}
+.privacy-agreement {
+    flex-wrap: wrap;
+    text-align: center;
+    font-weight: 400;
+    font-size: 12px;
+    font-style: italic;
+    color: #757575;
+    line-height: 1.8;
+}
+.recaptcha-container {
+    background-color: #eceef1;
+    margin: 32px -30px -30px;
+    padding: 16px;
+    text-align: center;
+}
+.recaptcha {
+    flex-wrap: wrap;
+    font-size: 10px;
+    color: #8d9096;
 }
 
 
@@ -319,9 +340,11 @@ ul, a {
     flex-direction: row;
     padding: 0;
     margin: 0;
+    color: #0077c5;
 }
-li {
-    padding: 0 5px;
+li a {
+    padding: 0 6px;
+    color: #505050;
 }
 .copyright {
     display: flex;
