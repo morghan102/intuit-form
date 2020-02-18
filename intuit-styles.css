@@ -1,15 +1,12 @@
 html {
     display: flex;
-    background: #eceef1;    /* need to mess w the color */
+    background: #eceef1;
     flex-direction: column;
     
 }
 
 
-/* inside header */
-/* needs better name. this one is confusing */
 header {
-    /* background: lightcoral; */
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -54,13 +51,10 @@ header {
     border-radius: 4px;
     border: 1px solid #4c4c4c;
     font-weight: 400;
-    /* box-shadow: 0 1px 1px 0 rgba(0,0,0,.75); */
 }
 
 
-/* this isnt working at all... WHY */
 .white-lock-img {
-    /* background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAwCAMAAAClrpMkAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAC6UExURUdwTP///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////3HoUvYAAAA9dFJOUwCrcV0ZYP6AMaL2lhCgWMgEKPEtUX9BqCfRDVU2y9X5OsDkAQbuFePEJC7TD7Q4E4QHfDD6DLJCell9Q8cCdpKaAAABLUlEQVQ4y92V13KDMBBFsWmxKe69995Lqv7/t3KFNQnIwsvkyZP7hI6ORmIXDZr2t1x85/p1dfzLQ2vnZNktWWcXr7Um7DeTVpyWtlg4VlqtmcHkRl8aS30TLDFVWokfrbsVo22XH7Kk8AaYmLs/Q3eO8eBeqwLPpiEwnYFU77wUaDlCyiApWcsXGVuNImi0YqyYl7w+FtsSs8H6EnsHe5XYJ5gv1xisILECmFzrCpghMQOsojiLyrP/nXfYZ5AGb2YmGt7yBn/YH+DpjI4udqRiP5HXy3m5Hu116mD1DuUN10FR10PCM8OX/oG3EN6C8JrCaxJeW3htwvOE5xGedXsR0yLrXAOrJekbWKL+jrVxIu/N/Xjm7y/OOybwjvBOZ1I7n4Jr/0LFSP4f/QY7TeMSyZCaMgAAAABJRU5ErkJggg==); */
     height: 1em;
     width: .8em;
     margin-top: 2px;
@@ -68,35 +62,16 @@ header {
     
 }
 
-/* .log-in-box p { NEED TO STACK THESE 2. ALIGN SELF OR ITEMS or content? IDK. THIS DOESN'T WORK
-    align-items: flex-start;
-}
-.forget {
-    align-items: flex-end;
-} */
-
 
 .body {
     display: flex;
     justify-content: center;
 }
 
-
-
-/* will be a navbar. I know how to do this. Q is where to put it on the page */
-.sticky {
-background: rgba(88, 199, 193, 0.815);
-}
-
-
-
-
 .content {
     display: flex;
     flex-direction: column;
-    /* border: 1px solid black;   */
     justify-content: center;
-
 }
 
 .content a {
@@ -106,28 +81,18 @@ background: rgba(88, 199, 193, 0.815);
 
 .intuit-title {
     justify-content: center;
-    /* this is not miving */
 }
-
-
-
-
 
 
 .child-logos {
     display: flex;
     flex-direction: row;
     animation: slide-left 1.1s cubic-bezier(.7,0,0,1) forwards;
-
-    /* these 2 props are super confusing to me. I need? */
     flex-basis: 33%;
     flex-grow: 1;
-    /* holding these 2 together */
-
     justify-content: center;
     cursor: pointer;
     padding-bottom: 4px;
-
 }
 .child-logos img {
     margin-right: .25em;
@@ -183,7 +148,6 @@ background: rgba(88, 199, 193, 0.815);
     padding-left: 8px;
     padding-right: 6px;
     height: 34px;
-    /* margin-bottom: 2em; */
     border-radius: 3px;
 }
 .input-footer {
@@ -217,10 +181,6 @@ form {
     margin: 0 205px;
     padding: 30px 30px;
     width: 318px;
-    /* box-sizing: border-box; */
-    /* width: 318px;
-    height: 590px; */
-    /* align-items: flex-start; */
     align-content: flex-start;
     font-family: AvenirNext,Avenir,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
@@ -242,19 +202,8 @@ form label {
     align-self: flex-start;
     justify-content: flex-start;
     font-size: 14px;
-    padding-bottom: 6px;
-    
+    padding-bottom: 6px;   
 }
-/* .extra-space {
-    padding-bottom: 5px;
-    padding-top: 5px;
-} */
-/* .site-form label p{
-    position: relative;
-    top: -3.5em;
-    flex-wrap: none;
-    width: 9em;
-} */
 .site-form .inputs {
     margin-top: .5em;
     display: flex;
@@ -278,13 +227,10 @@ form label {
 }
 .submit-button-box {
     padding-bottom: 30px;
-
 }
-/* theseeee  a2 rp elements. if they stay that way might be easier to just wrap all p's */
 .privacy-agreement-box {
     font-size: 14px;
     word-break: break-all;
-
 }
 .privacy-agreement {
     flex-wrap: wrap;
@@ -295,7 +241,6 @@ form label {
     color: #757575;
     line-height: 1.8;
     word-break: break-all;
-
 }
 .recaptcha-container {
     background-color: #eceef1;
@@ -308,10 +253,6 @@ form label {
     font-size: 10px;
     color: #8d9096;
 }
-
-
-
-
 .business-footing-info {
     display: flex;
     flex-direction: column;
@@ -325,7 +266,6 @@ form label {
     padding: 20px 0;
     line-height: 1.5;
 }
-/* maybe 5 more px of padding? im not sure, they have 5 on the box holding the links */
 ul, a {
     list-style-type: none;
     text-decoration: none;
@@ -341,9 +281,7 @@ li a {
 }
 .copyright {
     display: flex;
-
 }
 .terms-notice {
     display: flex;
-
 }
